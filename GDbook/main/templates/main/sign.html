@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Book World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body class="body-sign"><header>
+    <div class="left-button-group">
+        <a class="header-button button-create" href="/create">CREATE</a>
+        <a class="header-button button-book" href="/book">BOOK</a>
+        <a class="header-button button-reviews" href="/reviews">REVIEWS</a>
+    </div>
+    <div class="center-button-group">
+        <a class="header-button button-main" href="/">MAIN</a>
+    </div>
+    <div class="right-button-group">
+        <a class="header-button button-sign" href="/sign">SIGN IN</a>
+    </div>
+</header>
+
+    <div class="sign-wrap">
+        <div class="sign-form-wrap">
+            <form class="sign-form" action="" method="POST">
+                <div class="sign-text-inputs">
+                    <input class="sign-form-input input-nickname" type="text" name="nickname" value="nickname">
+                    <input class="sign-form-input input-password" type="password" name="password" value="password">
+                    <input class="sign-form-input input-email" type="email" name="email" value="email">
+                </div>
+                <div class="sign-buttons">
+                    <button class="sign-form-button button-login" name="login-button" type="submit">Login</button>
+                    <button class="sign-form-button button-register" name="register-button" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

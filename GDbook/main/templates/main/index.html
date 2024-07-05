@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Book World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body class="body-main"><header>
+    <div class="left-button-group">
+        {% if user.is_staff %}
+				 <a class="header-button button-create" href="/create">CREATE</a>
+				 {% else %}
+
+				 {% endif %}
+        <a class="header-button button-book" href="/book">BOOK</a>
+        <a class="header-button button-reviews" href="/reviews">REVIEWS</a>
+    </div>
+    <div class="center-button-group">
+        <a class="header-button button-main" href="/">MAIN</a>
+    </div>
+    <div class="right-button-group">
+        {% if user.is_authenticated %}
+				 <p class="header-button button-sign" >{{ user.username }}</p>
+
+        <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+            <button class="header-button button-sign" type="submit">Log out</button>
+        </form>
+				 {% else %}
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+				 <button class="header-button button-sign" href="{% url 'register' %}" class="link">REGISTER</button>
+            </form>
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+	     <button class="header-button button-sign" href="{% url 'login' %}" class="link">LOGIN</button>
+            </form>
+				 {% endif %}
+    </div>
+</header>
+
+    <div class="title">
+        <h1 class="title-text">GD Book World</h1>
+        <p class="title-description">Добро пожаловать на наш сайт!
+            Здесь вы можете легко и доступно
+            разместить свою электронную книгу!</p>
+    </div>
+
+<footer>
+    <p class="text-creators">The creators</p>
+    <ul class="list-creators">
+        <li class="list-creators-item">Sergeev D.</li>
+        <li class="list-creators-item">Safonov G.</li>
+        <li class="list-creators-item">Tuzov A.</li>
+        <li class="list-creators-item">Burenok D.</li>
+        <li class="list-creators-item">Karaguzin M.</li>
+        <li class="list-creators-item">Kovalev A.</li>
+        <li class="list-creators-item">Andronov N.</li>
+        <li class="list-creators-item">Vinogradsky I.</li>
+        <li class="list-creators-item">Konovaov A.</li>
+    </ul>
+</footer>
+</body>
+</html>

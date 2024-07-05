@@ -1,0 +1,256 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.right-button-group {
+    margin-right: 47px;
+}
+
+.button-reviews, .button-create, .button-book {
+    margin-left: 10px;
+}
+
+body {
+    height: 1080px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-main {
+    background-image: url("../img/main_bg.png");
+}
+
+.body-create {
+    background-image: url("../img/create_bg.png");
+}
+
+.body-sign {
+    background-image: url("../img/auth_bg.png");
+}
+
+.body-book {
+    background-image: url("../img/book_bg.png");
+}
+
+.body-reviews {
+    background-image: url("../img/com_bg.png");
+}
+
+.header-button, .create-book-button {
+    background-color: #D9D9D9;
+    padding: 8px;
+    border-radius: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    size: 24px;
+    line-height: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 146px;
+}
+
+.title-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    background-image: linear-gradient(90deg, #D7ABE2 0%, #C355DF 39%, #631976 73.4%, #4A0555 100%);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.title-description {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #D816DC;
+    -webkit-text-stroke: 1px #000000;
+    width: 625px;
+}
+
+footer {
+    margin-top: 400px;
+    display: flex;
+}
+@media (width < 714px) {
+    footer {
+        margin-top: 250px;
+    }
+}
+
+.text-creators,  .list-creators-item {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #881A99;
+    margin-right: 5px;
+}
+
+.list-creators {
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+.create-form-wrap, .sign-form-wrap {
+    height: 570px;
+    width: 1020px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #DA995E 0%, #B56221 50.5%, #4E2E08 100%);
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-wrap, .sign-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.create-image-input {
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-image-input-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    width: 146px;
+}
+
+.create-text-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+
+.create-form-input {
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.create-form-input-file {
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+}
+
+.create-form-button {
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.sign-text-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-form-input {
+    width: 750px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sign-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-form-button {
+    width: 250px;
+    height: 100px;
+    border-radius: 30px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+table tr td, table tr th{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6531206232492996) 0%) !important;
+    color: white !important;
+}
+
+table {
+    margin-top: 50px;
+}
+
+.book-cover {
+    height: 100px;
+}
+
+.book-file {
+    color: white;
+}
+
+.delete-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.books-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
