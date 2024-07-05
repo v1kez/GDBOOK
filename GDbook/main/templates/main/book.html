@@ -95,7 +95,12 @@
             {% endfor %}
             </tbody>
         </table>
-        <a class="create-book-button" href="/create">Create book</a>
+        {% if user.is_staff %}
+				 <a class="create-book-button" href="/create">Create book</a>
+				 {% else %}
+
+				 {% endif %}
+
     </div>
 
 </body>

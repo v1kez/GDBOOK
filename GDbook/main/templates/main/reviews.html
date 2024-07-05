@@ -46,8 +46,12 @@
     </div>
 </header>
     <div class="books-wrap">
-            <br><br>
-        <button class="create-book-button" type="submit"><a href="/add_reviews">add a review</a> </button>
+            <br><br>{% if user %}
+				 <button class="create-book-button" type="submit"><a href="/add_reviews">add a review</a> </button>
+				 {% else %}
+
+				 {% endif %}
+
 
     </div>
         <table class="table table-reviews">
